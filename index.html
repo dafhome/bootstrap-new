@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- enlace a cdn bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header class="container-light d-flex">
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid bg-danger">
+            <a class="navbar-brand " href="#">
+                <img class="rounded-1 my-2" src="/images/logo.jpg" alt="Bootstrap" height="80">
+            </a>
+            <h1>Gaming</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Empieza el Juego</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Noticias</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Plataformas
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">PS5</a></li>
+                                <li><a class="dropdown-item" href="#">Xbox</a></li>
+                                <li><a class="dropdown-item" href="#">Switch</a></li>
+                                <li><a class="dropdown-item" href="#">PC</a></li>
+
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Competitivo</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<!-- <body class="d-flex flex-row container-light "> -->
+
+<body>
+    <div class="container-light d-flex ">
+        <aside class="left col-2 bg-light d-flex flex-column gap-3 overflow-scroll">
+
+            <div class="card">
+                <img src="/images/team1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text posicion text-warning fs-2">First</p>
+                    <p class="card-text">Player1</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/images/team2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text posicion text-warning fs-3">Second</p>
+                    <p class="card-text">Player2</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/images/team7.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text posicion text-warning fs-4">Third</p>
+                    <p class="card-text">Player3</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/images/team3.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text posicion text-warning">Fourth</p>
+                    <p class="card-text">Player4</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/images/team6.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text posicion text-warning">Fifth</p>
+                    <p class="card-text">Player5</p>
+                </div>
+            </div>
+        </aside>
+        <main class="col-10">
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/images/background1.jpg" class="d-block w-100" alt="...">
+                        <h1 class="texto-imagen">Imagen1</h1>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/background2.jpg" class="d-block w-100" alt="...">
+                        <h1 class="texto-imagen">Imagen2</h1>
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/background5.avif" class="d-line w-100" alt="...">
+                        <h1 class="texto-imagen">Imagen3</h1>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="mx-4 mt-2">
+                <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ratione laboriosam officia at iusto ex
+                    nisi
+                    reiciendis quia dolor. Aliquid quidem debitis ullam sit placeat nisi perferendis sint consequatur,
+                    quas
+                    quia non et odit provident maiores, nemo dolores nobis! Aliquam nesciunt sint sequi modi debitis
+                    doloremque aut, tempore eaque commodi, repellat, facere harum molestiae atque in? Eius, inventore
+                    doloribus cumque nihil assumenda necessitatibus sunt! Corporis, numquam. Fugiat autem, labore,
+                    quaerat
+                    esse reiciendis assumenda magni molestias optio laudantium natus inventore repellat a veniam.
+                    Numquam,
+                    officiis consequuntur optio atque est explicabo provident aut tenetur ducimus iusto veniam eos,
+                    mollitia
+                    labore odit? Quia eveniet numquam est molestias porro. Nesciunt, voluptatum exercitationem corporis
+                    adipisci dolor enim architecto veritatis voluptatibus assumenda, quos corrupti ab molestiae voluptas
+                    omnis quas veniam facere deleniti dicta aperiam vitae eaque velit non vel asperiores! Assumenda
+                    quibusdam in iusto, officiis atque voluptate molestiae quis saepe. Aspernatur, laborum cumque. Omnis
+                    quae fugiat eveniet officiis, tenetur ratione dignissimos dolores tempore voluptatum numquam tempora
+                    neque hic perspiciatis cumque, consequatur harum necessitatibus, doloremque modi delectus? Et,
+                    perspiciatis pariatur. Eveniet quas earum qui optio beatae similique, sed nemo vitae architecto quo
+                    unde
+                    ullam labore commodi eaque incidunt laborum nihil, suscipit doloremque odio fugit officiis. Maxime
+                    suscipit illo, ab minus ipsa labore cumque error ea aspernatur earum at. Culpa corporis molestiae
+                    non
+                    esse aut libero aliquam quos quia? Similique odit ex qui minima quis rem aut voluptate, labore eaque
+                    magni veniam eligendi voluptatem accusamus accusantium cum hic, tenetur at quasi eius vel! Non, nam.
+                    Delectus corporis est possimus esse necessitatibus dicta neque sed officiis mollitia eveniet nostrum
+                    magni atque voluptates dignissimos totam, beatae iusto blanditiis ad laboriosam ratione nesciunt,
+                    sint a
+                    ex exercitationem! Libero suscipit aspernatur accusantium voluptatibus, necessitatibus eligendi modi
+                    dolore, deserunt impedit exercitationem natus, doloremque numquam! Distinctio deserunt aliquam
+                    possimus
+                    maiores culpa doloremque unde ex.</p>
+
+            </div>
+
+
+
+
+        </main>
+
+    </div>
+</body>
+
+<footer>
+
+    <div class="container-light my-2">
+
+        <footer class="bg-dark text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Form -->
+                <section class="">
+                    <form action="">
+                        <!--Grid row-->
+                        <div class="row d-flex justify-content-center">
+                            <!--Grid column-->
+                            <div class="col-auto">
+                                <p class="pt-2">
+                                    <strong>¡Incribete para recibir noticias!</strong>
+                                </p>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-5 col-12">
+                                <!-- Email input -->
+                                <div class="form-outline form-white mb-4">
+                                    <input type="email" id="form5Example2" class="form-control" />
+                                    <label class="form-label" for="form5Example2">Correo Electrónico</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-auto">
+                                <!-- Submit button -->
+                                <button type="submit" class="btn btn-outline-light mb-4">
+                                    Subscríbete
+                                </button>
+                            </div>
+                            <!--Grid column-->
+                        </div>
+                        <!--Grid row-->
+                    </form>
+                </section>
+                <!-- Section: Form -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2024 Copyright:
+                <a class="text-white" href="#">gamingparatodos.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </div>
+    <!-- End of .container -->
+
+</footer>
+
+
+
+<!-- este elemento se pone al final para que ya haya leido todos los elementos html -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</html>
