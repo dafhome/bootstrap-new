@@ -1,8 +1,7 @@
 .left{
     margin-top: 7rem;
     padding: 1rem;
-    height: 75vh;
-    
+    height: 120vh;
 }
 .posicion{
     color:rgba(95, 20, 165, 0.857);
@@ -19,9 +18,7 @@
 }
 
 .card:hover{
-
- 
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.508);
     cursor: url(/images/cursor.png), nw-resize;
-
 }
+
